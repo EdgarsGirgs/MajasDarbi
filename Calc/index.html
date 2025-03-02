@@ -33,6 +33,25 @@ function handleClick() {
         resultElement.classList.remove("error");
     }
 }
+function calculate(num1, operator, num2) {
+    switch (operator) {
+        case "+": 
+        return num1 + num2;
+        case "-": return num1 - num2;
+        case "*": return num1 * num2;
+        case "/": return num2 !== 0 ? num1 / num2 : "Dalīšana ar 0 nav atļauta!";
+        default: return "Nederīga operācija";
+    }
+}
+
+function calculate(num1, operator, num2) {
+    switch (operator) {
+        case "+": return num1 + num2;
+        case "-": return num1 - num2;
+        case "*": return num1 * num2;
+        case "/": return num1 / num2;
+    }
+}
     </script>
 </body>
 </html>
